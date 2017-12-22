@@ -1,0 +1,144 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-title-container {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+
+.form-title {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.input-label .text {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-label .input-field {
+    width: 85%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.input-label .input-field[data-error="true"] {
+    border: 1px solid red;
+}
+
+.input-label .input-area {
+    width: 100%;
+    height: 170px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.input-label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.user-input-container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.info-container {
+    width: 30%;
+}
+
+.comments-container {
+    width: 70%;
+}
+
+.submit-button {
+    width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    color: orange;
+    background-color: white;
+    border: 1px solid orange;
+    position: absolute;
+    right: 15%;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.submit-button[data-valid="true"]:hover {
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+}
+
+.submit-button[data-valid="false"] {
+    color: #ccc;
+    border: 1px solid #ccc;
+    pointer-events:none;
+}
+
+.submit-form-container .input-label {
+    display: inline-block;
+}
+
+.submit-form-container {
+    margin-bottom: 50px;
+}
+
+.validation-error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+@media all and (max-width: 980px) {
+
+    .user-input-container {
+        display: block;
+    }
+
+    .info-container {
+        width: 100%;
+    }
+
+    .input-label .input-field,
+    .input-label .input-area {
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+
+    .comments-container {
+        width: 100%;
+    }
+}
+@media all and (max-width: 736px) { 
+
+    .form-container {
+        width: 85%;
+    }
+    .submit-button {
+        width: 100%;
+        position: relative;
+        right: 0;
+    }
+}
