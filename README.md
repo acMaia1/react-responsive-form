@@ -7,4 +7,4 @@ Run `npm install`
 
 ## Build & development
 
-Run `npm run start`
+Run `npm run start` and the page is available at `localhost:8181`
